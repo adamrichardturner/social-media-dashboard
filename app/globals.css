@@ -1,33 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Light Theme Colors */
+  --background-color: #ffffff; /* Originally White (BG) */
+  --top-background-color: #f0f9ff; /* Originally Very Pale Blue (Top BG Pattern) */
+  --card-background-color: #e9ecef; /* Originally Light Grayish Blue (Card BG) */
+  --text-color: #718096; /* Originally Dark Grayish Blue (Text) */
+  --text-color-strong: #1d3557; /* Originally Very Dark Blue (Text) */
+  --toggle-color: #bbdefb; /* Originally Toggle */
+
+  /* Social Media Colors */
+  --facebook: #3b5998; /* hsl(208, 92%, 53%) */
+  --twitter: #1da1f2; /* hsl(203, 89%, 53%) */
+  --instagram-start: #f7b42c; /* hsl(37, 97%, 70%) */
+  --instagram-end: #fc575e; /* hsl(329, 70%, 58%) */
+  --youtube: #ff0000; /* hsl(348, 97%, 39%) */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Dark Theme Colors */
+    --background-color: #1d3557; /* Originally Very Dark Blue (BG) */
+    --top-background-color: #1a2c4d; /* Originally Very Dark Blue (Top BG Pattern) */
+    --card-background-color: #2d3852; /* Originally Dark Desaturated Blue (Card BG) */
+    --text-color: #747d83; /* Originally Desaturated Blue (Text) */
+    --text-color-strong: #ffffff; /* Originally White (Text) */
+    --toggle-color: #4db5ff; /* Gradient of hsl(210, 78%, 56%) to hsl(146, 68%, 55%) */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-color));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-color))
     )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    rgb(var(--top-background-color));
 }
