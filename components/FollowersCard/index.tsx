@@ -42,6 +42,8 @@ function FollowersCard({
         <Image
           src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
           alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
+          width={20}
+          height={20}
         />
         <span>{change.number} Today</span>
       </div>

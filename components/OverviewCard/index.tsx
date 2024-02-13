@@ -35,6 +35,8 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
           <Image
             src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
+            width={20}
+            height={20}
           />
           <span>{change.percentage}%</span>
         </div>
