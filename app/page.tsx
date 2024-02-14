@@ -1,8 +1,5 @@
-import Image from "next/image"
 import socialData from "@/utils/data.json"
-import { Followers } from "@/types"
 import FollowersCard from "@/components/FollowersCard"
-import { nanoid } from "nanoid"
 import { ReactNode } from "react"
 import OverviewCard from "@/components/OverviewCard"
 
@@ -41,9 +38,11 @@ export default function Home() {
           <h3 className='text-sm text-text-color'>Total Followers: 23,004</h3>
         </div>
       </header>
-      <div className='relative container'>
+      <div className='relative top-[140px]'>
         <main className='flex w-full flex-col items-center'>
-          <section className='flex flex-row'>{renderFollowers}</section>
+          <section className='grid grid-cols-4 grid-rows-1 gap-8'>
+            {renderFollowers}
+          </section>
           <section className='flex flex-row'>{renderOverviews}</section>
         </main>
       </div>

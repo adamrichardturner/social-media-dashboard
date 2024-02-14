@@ -11,9 +11,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        sm: "100%",
+        lg: "1110px",
       },
     },
     extend: {
@@ -40,6 +40,9 @@ module.exports = {
       },
       fontSize: {
         "overview-heading": "14px",
+      },
+      letterSpacing: {
+        widest: '5px',
       },
       borderRadius: {
         lg: "var(--radius)",
