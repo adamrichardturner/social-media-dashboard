@@ -4,20 +4,13 @@
 
 @layer base {
   :root {
-    
-
-    --radius: 5px;
-  }
-
-  .light {
     --background-color: #ffffff; /* Originally White (BG) */
     --top-background-color: #f0f9ff; /* Originally Very Pale Blue (Top BG Pattern) */
     --card-background-color: #e9ecef; /* Originally Light Grayish Blue (Card BG) */
     --card-background-hover-color: #E1E4F0;
     --text-color: #718096; /* Originally Dark Grayish Blue (Text) */
     --text-color-strong: #1d3557; /* Originally Very Dark Blue (Text) */
-    --toggle-color-start: #AEB3CB;
-    --toggle-color-end: #AEB3CB;
+    --toggle-color: #bbdefb; /* Originally Toggle */
 
     /* Social Media Colors */
     --facebook: #178FF5; /* hsl(208, 92%, 53%) */
@@ -25,6 +18,8 @@
     --instagram-start: #FDC366; /* hsl(37, 97%, 70%) */
     --instagram-end: #DF4896; /* hsl(329, 70%, 58%) */
     --youtube: #C4032B; /* hsl(348, 97%, 39%) */  
+
+    --radius: 5px;
   }
 
   .dark {
@@ -35,8 +30,7 @@
     --card-background-hover-color: #333A55;
     --text-color: #8C98C6; /* Originally Desaturated Blue (Text) */
     --text-color-strong: #ffffff; /* Originally White (Text) */
-    --toggle-color-start: #40DB82;
-    --toggle-color-end: #388FE7;
+    --toggle-color: #4db5ff; /* Gradient of hsl(210, 78%, 56%) to hsl(146, 68%, 55%) */
   
     /* Social Media Colors */
     --facebook: #178FF5; /* hsl(208, 92%, 53%) */
@@ -56,28 +50,7 @@
     --card-background-hover-color: #333A55;
     --text-color: #747d83; /* Originally Desaturated Blue (Text) */
     --text-color-strong: #ffffff; /* Originally White (Text) */
-    --toggle-color-start: #40DB82;
-    --toggle-color-end: #388FE7;
-
-    /* Social Media Colors */
-    --facebook: #178FF5; /* hsl(208, 92%, 53%) */
-    --twitter: #1da1f2; /* hsl(203, 89%, 53%) */
-    --instagram-start: #FDC366; /* hsl(37, 97%, 70%) */
-    --instagram-end: #DF4896; /* hsl(329, 70%, 58%) */
-    --youtube: #C4032B; /* hsl(348, 97%, 39%) */  
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: #ffffff; /* Originally White (BG) */
-    --top-background-color: #f0f9ff; /* Originally Very Pale Blue (Top BG Pattern) */
-    --card-background-color: #e9ecef; /* Originally Light Grayish Blue (Card BG) */
-    --card-background-hover-color: #E1E4F0;
-    --text-color: #718096; /* Originally Dark Grayish Blue (Text) */
-    --text-color-strong: #1d3557; /* Originally Very Dark Blue (Text) */
-    --toggle-color-start: #AEB3CB;
-    --toggle-color-end: #AEB3CB;
+    --toggle-color: #4db5ff; /* Gradient of hsl(210, 78%, 56%) to hsl(146, 68%, 55%) */
 
     /* Social Media Colors */
     --facebook: #178FF5; /* hsl(208, 92%, 53%) */

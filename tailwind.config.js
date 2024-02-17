@@ -21,9 +21,11 @@ module.exports = {
         "background-color": "var(--background-color)",
         "top-background-color": "var(--top-background-color)",
         "card-background-color": "var(--card-background-color)",
+        "card-background-hover-color": "var(--card-background-hover-color)",
         "text-color": "var(--text-color)",
         "text-color-strong": "var(--text-color-strong)",
-        "toggle-color": "var(--toggle-color)",
+        "toggle-color-start": "var(--toggle-color-start)",
+        "toggle-color-end": "var(--toggle-color-end)",
         facebook: "var(--facebook)",
         twitter: "var(--twitter)",
         "instagram-start": "var(--instagram-start)",
@@ -33,7 +35,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         instagram:
           "linear-gradient(90deg, var(--instagram-start) 0%, var(--instagram-end) 100%)",
-        // ... more background images if needed
+        toggle: "linear-gradient(90deg, var(--toggle-color-start) 0%, var(--toggle-color-end) 100%)",
       }),
       fontFamily: {
         inter: ["Inter", "sans-serif"],
