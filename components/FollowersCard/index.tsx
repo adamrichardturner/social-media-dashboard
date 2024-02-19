@@ -46,13 +46,16 @@ function FollowersCard({
       <div
         className={`rounded-t-lg ${borderColorClass(platform)} h-2 w-full`}
       ></div>
-      <div className='w-full space-y-4 py-6 flex flex-col items-center justify-center text-center'>
+      <div className='w-full space-y-4 py-7 flex flex-col items-center justify-center text-center'>
         <div className='rounded-lg flex flex-row space-x-2 items-center'>
           <Image
             src={socialPicker(platform) || ""}
             alt={platform + " Icon"}
             width={20}
             height={20}
+            style={{
+              height: "auto",
+            }}
           />
           <span className='font-semibold text-xs'>{handle}</span>
         </div>
@@ -61,17 +64,20 @@ function FollowersCard({
             {truncateNumber(followers)}
           </h3>
           <div className='w-full text-center'>
-            <span className='text-center w-full tracking-widest uppercase font-light text-sm'>
+            <span className='text-center w-full tracking-widest uppercase font-light text-xs'>
               {term}
             </span>
           </div>
         </div>
-        <div className='flex flex-row items-center justify-center space-x-2'>
+        <div className='flex flex-row items-center justify-center space-x-1'>
           <Image
             src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
-            width={20}
-            height={20}
+            width={10}
+            height={10}
+            style={{
+              height: "auto",
+            }}
           />
           <span
             className={`${

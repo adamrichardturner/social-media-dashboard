@@ -1,5 +1,8 @@
+"use client"
+
 import socialPicker from "@/utils/socialPicker"
 import Image from "next/image"
+import truncateNumber from "@/utils/truncateNumber"
 
 interface OverviewCardProps {
   type: string
@@ -15,14 +18,11 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
   // Determines whether an increase or decrease of overview statistics
   const isUp = change.type === "increase"
   return (
-    <article>
-      <div>
+    <article className='cursor-pointer p-6 space-y-8 rounded-lg w-[255px] bg-card-background-color hover:bg-card-background-hover-color'>
+      <div className='flex flex-row justify-between items-center'>
         <div>
-          <h3>{type}</h3>
+          <h3 className='font-semibold text-sm'>{type}</h3>
         </div>
-        <div>{number}</div>
-      </div>
-      <div>
         <div>
           <Image
             src={socialPicker(platform) || ""}
@@ -31,12 +31,15 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
             height={20}
           />
         </div>
-        <div>
+      </div>
+      <div className='flex flex-row justify-between items-center'>
+        <div className='text-xl font-semibold'>{truncateNumber(number)}</div>
+        <div className='flex flex-row items-center space-x-1 text-xs'>
           <Image
             src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
-            width={20}
-            height={20}
+            width={10}
+            height={10}
           />
           <span>{change.percentage}%</span>
         </div>

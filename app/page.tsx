@@ -4,7 +4,7 @@ import socialData from "@/utils/data.json"
 import FollowersCard from "@/components/FollowersCard"
 import { ReactNode } from "react"
 import OverviewCard from "@/components/OverviewCard"
-import DarkModeToggle from "@/components/DarkModeToggle"
+import { DarkModeToggle } from "@/components/DarkModeToggle"
 
 export default function Home() {
   let totalFollowers: number = 0
@@ -34,7 +34,7 @@ export default function Home() {
     )
   })
   return (
-    <div>
+    <div className='bg-background-color h-screen'>
       <header className='mx-auto flex flex-row justify-between w-full bg-top-background-color h-[244px] absolute left-0 top-0 text-center pt-9'>
         <div className='w-full mx-auto container flex flex-row items-start justify-between text-text-color-strong'>
           <div className='flex flex-row items-center justify-between w-full'>
@@ -53,12 +53,17 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div className='relative top-[140px]'>
+      <div className='relative top-[140px] container'>
         <main className='flex w-full flex-col items-center'>
           <section className='grid grid-cols-4 grid-rows-1 gap-8'>
             {renderFollowers}
           </section>
-          <section className='flex flex-row'>{renderOverviews}</section>
+          <h3 className='text-left w-full font-semibold text-2xl pb-6 pt-10'>
+            Overview - Today
+          </h3>
+          <section className='grid grid-cols-4 grid-rows-2 gap-8'>
+            {renderOverviews}
+          </section>
         </main>
       </div>
     </div>
