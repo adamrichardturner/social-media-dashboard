@@ -42,7 +42,7 @@ function FollowersCard({
   }
 
   return (
-    <article className='rounded-t-lg text-text-color rounded-lg w-[255px] bg-card-background-color hover:bg-card-background-hover-color hover:cursor-pointer transition-colors flex flex-col items-center justify-center'>
+    <article className='rounded-t-lg text-text-color rounded-lg w-full bg-card-background-color hover:bg-card-background-hover-color hover:cursor-pointer transition-colors flex flex-col items-center justify-center'>
       <div
         className={`rounded-t-lg ${borderColorClass(platform)} h-2 w-full`}
       ></div>
@@ -55,6 +55,7 @@ function FollowersCard({
             height={20}
             style={{
               height: "auto",
+              width: "20px",
             }}
           />
           <span className='font-semibold text-xs'>{handle}</span>
@@ -77,6 +78,7 @@ function FollowersCard({
             height={10}
             style={{
               height: "auto",
+              width: "20px",
             }}
           />
           <span

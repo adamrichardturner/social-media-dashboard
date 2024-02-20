@@ -18,7 +18,7 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
   // Determines whether an increase or decrease of overview statistics
   const isUp = change.type === "increase"
   return (
-    <article className='cursor-pointer p-6 space-y-8 rounded-lg w-[255px] bg-card-background-color hover:bg-card-background-hover-color'>
+    <article className='cursor-pointer p-6 space-y-8 rounded-lg w-full bg-card-background-color hover:bg-card-background-hover-color'>
       <div className='flex flex-row justify-between items-center'>
         <div>
           <h3 className='font-semibold text-sm'>{type}</h3>
@@ -29,6 +29,10 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
             alt={platform + " Icon"}
             width={20}
             height={20}
+            style={{
+              height: "auto",
+              width: "20px",
+            }}
           />
         </div>
       </div>
@@ -40,6 +44,10 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
             width={10}
             height={10}
+            style={{
+              height: "auto",
+              width: "20px",
+            }}
           />
           <span>{change.percentage}%</span>
         </div>

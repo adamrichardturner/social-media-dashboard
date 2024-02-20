@@ -9,7 +9,7 @@ export function DarkModeToggle() {
   }
 
   return (
-    <div className='flex items-center space-x-2'>
+    <div className='flex flex-row justify-between w-full md:justify-end items-center space-x-2'>
       <span className='font-semibold'>Dark Mode</span>
       <Switch id='airplane-mode' onClick={toggleTheme} />
     </div>
