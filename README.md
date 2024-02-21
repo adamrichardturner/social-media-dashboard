@@ -16,14 +16,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://socialdashboard.adamrichardturner.dev/](https://socialdashboard.adamrichardturner.dev/)
 
 ## My process
 
 ### Built with
 
-- [TailwindCSS](https://tailwindcss.com/)
-- [Shadcn](https://shadcn.com/)
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
+- [Shadcn](https://shadcn.com/) - UI components
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
