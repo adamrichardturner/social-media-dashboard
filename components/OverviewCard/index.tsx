@@ -49,7 +49,13 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
               width: "20px",
             }}
           />
-          <span>{change.percentage}%</span>
+          <span
+            className={`${
+              change.type === "increase" ? "text-[#1EB589]" : "text-[#DC414C]"
+            } text-xs`}
+          >
+            {change.percentage}%
+          </span>
         </div>
       </div>
     </article>
