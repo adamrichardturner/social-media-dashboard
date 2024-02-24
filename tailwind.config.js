@@ -30,6 +30,9 @@ module.exports = {
         "card-background-hover-color": "var(--card-background-hover-color)",
         "text-color": "var(--text-color)",
         "text-color-strong": "var(--text-color-strong)",
+        "text-color-heading": "var(--text-color-heading)",
+        "text-color-subheading": "var(--text-color-subheading)",
+        "card-text-heading": "var(--card-text-heading)",
         "toggle-color-start": "var(--toggle-color-start)",
         "toggle-color-end": "var(--toggle-color-end)",
         facebook: "var(--facebook)",
@@ -47,7 +50,12 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       fontSize: {
-        "overview-heading": "14px",
+        "main-heading": "28px",
+        "follower-count": "56px",
+        "card-meta": "12px",
+        "overview-heading": "24px",
+        "overview-count": "32px",
+        "main-sub-heading": "14px",
       },
       letterSpacing: {
         widest: '5px',

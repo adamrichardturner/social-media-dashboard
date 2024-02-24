@@ -77,6 +77,16 @@
       "id": 7
     },
     {
+      "type": "Profile Views",
+      "platform": "Instagram",
+      "number": 52000,
+      "change": {
+        "percentage": 1375,
+        "type": "increase"
+      },
+      "id": 8
+    },
+    {
       "type": "Retweets",
       "platform": "Twitter",
       "number": 117,
@@ -84,7 +94,7 @@
         "percentage": 303,
         "type": "increase"
       },
-      "id": 8
+      "id": 9
     },
     {
       "type": "Likes",
@@ -94,7 +104,7 @@
         "percentage": 553,
         "type": "increase"
       },
-      "id": 9
+      "id": 10
     },
     {
       "type": "Likes",
@@ -104,18 +114,9 @@
         "percentage": 19,
         "type": "decrease"
       },
-      "id": 10
-    },
-    {
-      "type": "Profile Views",
-      "platform": "Instagram",
-      "number": 52000,
-      "change": {
-        "percentage": 1375,
-        "type": "increase"
-      },
       "id": 11
     },
+    
     {
       "type": "Total Views",
       "platform": "YouTube",

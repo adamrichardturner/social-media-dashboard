@@ -44,9 +44,9 @@ function FollowersCard({
   return (
     <article className='rounded-t-lg text-text-color rounded-lg w-full bg-card-background-color hover:bg-card-background-hover-color hover:cursor-pointer transition-colors flex flex-col items-center justify-center'>
       <div
-        className={`rounded-t-lg ${borderColorClass(platform)} h-2 w-full`}
+        className={`rounded-t-2xl ${borderColorClass(platform)} h-1 w-full`}
       ></div>
-      <div className='w-full space-y-4 py-7 flex flex-col items-center justify-center text-center'>
+      <div className='w-full space-y-[26px] py-7 flex flex-col items-center justify-center text-center'>
         <div className='rounded-lg flex flex-row space-x-2 items-center'>
           <Image
             src={socialPicker(platform) || ""}
@@ -58,14 +58,14 @@ function FollowersCard({
               width: "20px",
             }}
           />
-          <span className='font-semibold text-xs'>{handle}</span>
+          <span className='font-semibold text-card-meta'>{handle}</span>
         </div>
         <div className='text-center w-full flex flex-col items-center justify-center'>
-          <h3 className='text-5xl font-bold text-text-color-strong'>
+          <h3 className='text-follower-count whitespace-pre-line leading-[48px] font-bold text-text-color-strong'>
             {truncateNumber(followers)}
           </h3>
-          <div className='w-full text-center'>
-            <span className='text-center w-full tracking-widest uppercase font-light text-xs'>
+          <div className='w-full text-center pt-[12px]'>
+            <span className='text-center w-full tracking-widest uppercase font-light text-card-meta'>
               {term}
             </span>
           </div>
@@ -74,17 +74,13 @@ function FollowersCard({
           <Image
             src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
-            width={10}
-            height={10}
-            style={{
-              height: "auto",
-              width: "20px",
-            }}
+            width={8}
+            height={4}
           />
           <span
             className={`${
               change.type === "increase" ? "text-[#1EB589]" : "text-[#DC414C]"
-            } text-xs`}
+            } text-card-meta font-semibold`}
           >
             {change.number} Today
           </span>

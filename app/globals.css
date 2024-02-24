@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  .root {
     --background-color: #ffffff;
-    --top-background-color: #f0f9ff;
-    --card-background-color: #e9ecef;
+    --top-background-color: #f7f9ff;
+    --card-background-color: #f1f3fa;
     --card-background-hover-color: #e1e4f0;
     --text-color: #718096;
-    --text-color-strong: #1d3557;
+    --text-color-strong: #1d1f29;
+    --text-color-heading: #1d1f29;
+    --text-color-subheading: #63687d;
+    --card-text-heading: #63687d;
     --toggle-color-start: #aeb3cb;
     --toggle-color-end: #aeb3cb;
 
@@ -22,9 +25,6 @@
 
     --radius: 5px;
   }
-}
-
-@media (prefers-color-scheme: dark) {
   .dark {
     /* Dark Theme Colors */
     --background-color: #1d1f29;
@@ -33,6 +33,9 @@
     --card-background-hover-color: #333a55;
     --text-color: #747d83;
     --text-color-strong: #ffffff;
+    --text-color-heading: #ffffff;
+    --text-color-subheading: #ffffff;
+    --card-text-heading: #8c98c6;
     --toggle-color-start: #40db82;
     --toggle-color-end: #388fe7;
 
@@ -42,5 +45,28 @@
     --instagram-start: #fdc366;
     --instagram-end: #df4896;
     --youtube: #c4032b;
+  }
+
+  .light {
+    --background-color: #ffffff;
+    --top-background-color: #f7f9ff;
+    --card-background-color: #f1f3fa;
+    --card-background-hover-color: #e1e4f0;
+    --text-color: #718096;
+    --text-color-strong: #1d1f29;
+    --text-color-heading: #1d1f29;
+    --text-color-subheading: #63687d;
+    --card-text-heading: #63687d;
+    --toggle-color-start: #aeb3cb;
+    --toggle-color-end: #aeb3cb;
+
+    /* Social Media Colors */
+    --facebook: #178ff5;
+    --twitter: #1da1f2;
+    --instagram-start: #fdc366;
+    --instagram-end: #df4896;
+    --youtube: #c4032b;
+
+    --radius: 5px;
   }
 }

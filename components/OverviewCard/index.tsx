@@ -18,17 +18,19 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
   // Determines whether an increase or decrease of overview statistics
   const isUp = change.type === "increase"
   return (
-    <article className='cursor-pointer p-6 space-y-8 rounded-lg w-full bg-card-background-color hover:bg-card-background-hover-color'>
+    <article className='cursor-pointer p-6 space-y-8 rounded-[5px] w-full bg-card-background-color hover:bg-card-background-hover-color'>
       <div className='flex flex-row justify-between items-center'>
         <div>
-          <h3 className='font-semibold text-sm'>{type}</h3>
+          <h3 className='font-semibold text-main-sub-heading text-card-text-heading'>
+            {type}
+          </h3>
         </div>
         <div>
           <Image
             src={socialPicker(platform) || ""}
             alt={platform + " Icon"}
-            width={20}
-            height={20}
+            width={10}
+            height={10}
             style={{
               height: "auto",
               width: "20px",
@@ -36,18 +38,16 @@ function OverviewCard({ type, platform, number, change }: OverviewCardProps) {
           />
         </div>
       </div>
-      <div className='flex flex-row justify-between items-center'>
-        <div className='text-xl font-semibold'>{truncateNumber(number)}</div>
+      <div className='flex flex-row justify-between items-end'>
+        <div className='text-overview-count font-semibold leading-none'>
+          {truncateNumber(number)}
+        </div>
         <div className='flex flex-row items-center space-x-1 text-xs'>
           <Image
             src={isUp ? "/images/icon-up.svg" : "/images/icon-down.svg"}
             alt={isUp ? "Arrow pointing up" : "Arrow pointing down"}
-            width={10}
-            height={10}
-            style={{
-              height: "auto",
-              width: "20px",
-            }}
+            width={8}
+            height={4}
           />
           <span
             className={`${
