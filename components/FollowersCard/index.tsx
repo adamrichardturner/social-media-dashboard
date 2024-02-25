@@ -46,7 +46,7 @@ function FollowersCard({
       <div
         className={`rounded-t-2xl ${borderColorClass(platform)} h-1 w-full`}
       ></div>
-      <div className='w-full space-y-[26px] py-7 flex flex-col items-center justify-center text-center'>
+      <div className='w-full space-y-[26px] py-6 flex flex-col items-center justify-center text-center'>
         <div className='rounded-lg flex flex-row space-x-2 items-center'>
           <Image
             src={socialPicker(platform) || ""}
