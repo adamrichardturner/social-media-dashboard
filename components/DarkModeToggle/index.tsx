@@ -22,7 +22,7 @@ export function DarkModeToggle() {
       <Switch
         id='dark-mode-toggle'
         onClick={toggleTheme}
-        checked={theme === "light"} // Updated to reflect light mode as the "checked" state
+        checked={theme === "light"}
         data-state={theme === "light" ? "checked" : "unchecked"}
       />
     </div>
